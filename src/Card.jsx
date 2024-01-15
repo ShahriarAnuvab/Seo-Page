@@ -12,7 +12,7 @@ const Card = () => {
   const [files, setFiles] = useState([]);
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get("https://seo-1-project-server.vercel.app/upload").
+    axios.get("http://localhost:5000/upload").
     then((data) => {
       setData(data.data);
     });
@@ -31,12 +31,12 @@ const Card = () => {
       formData.append("attachments", file);
       fileObject[key] = file.name;
       axios
-        .post("https://seo-1-project-server.vercel.app/upload", fileObject)
+        .post("http://localhost:5000/upload", fileObject)
         .then((data) => {
             if (data.data.insertedId) {
                 console.log(data.data)
                 toast.success("Upload Successfull")
-                axios.get("https://seo-1-project-server.vercel.app/upload")
+                axios.get("http://localhost:5000/upload")
                 .then((updatedData) => {
                   setData(updatedData.data);
       
