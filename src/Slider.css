@@ -1,0 +1,29 @@
+/* styles.css (or your preferred file name) */
+
+/* For WebKit/Blink Browsers */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f2f4f7; /* Set the background color of the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #0070bb; /* Set the color of the thumb (the draggable part) */
+  }
+  
+  /* For Firefox Browsers */
+  /* You may need to add this style to support Firefox */
+  /* Note: You can customize the colors as needed */
+  html {
+    scrollbar-color: #f2f4f7 #605766;
+  }
+  
+  /* For Microsoft Edge */
+  /* You may need to add this style to support Microsoft Edge */
+  /* Note: You can customize the colors as needed */
+  body {
+    scrollbar-color: #f2f4f7 #605766;
+  }
+  
