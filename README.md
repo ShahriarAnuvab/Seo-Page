@@ -1,5 +1,3 @@
-# Project Name
-
 **SeoPage**
 
 [Live_Link](https://65a549e7b1550b1e0bc42e1d--coruscating-melomakarona-b55507.netlify.app/)
